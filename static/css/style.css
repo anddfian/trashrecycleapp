@@ -69,6 +69,15 @@ section{
     border: 0;
 }
 
+.result-img
+{
+    margin-top: 80px;
+    width: 250px;
+    height: 250px;
+    border : 2px solid #76A36D;
+}
+
+
 .header{
     position: fixed;
     top:0; left:0; right: 0;
@@ -263,6 +272,46 @@ section{
     text-transform: none;
 }
 
+.upload-section
+{
+    width: 100%;
+    margin-top: 5%!important;
+}
+
+.upload-file
+{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.file-form
+{
+    margin-top: 15px;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+}
+
+.file-form-input
+{
+    max-width: 50%;
+    border-radius: .5rem;
+    border: 1px solid rgb(59,99,54);
+    display: inline-block;
+    padding: 8px 420px 8px 20px;
+    margin-right: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.2s , border 0.2s , color 0.2s;
+}
+
+.file-form-input:focus
+{
+    outline: none;
+}
+
 .header .login-form p{
     font-size: 1.4rem;
     padding:.5rem 0;
@@ -274,11 +323,43 @@ section{
     text-decoration: underline;
 }
 
+.upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/hero-img.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.upload .content{
+    text-align: center;
+    width:60rem;
+}
+
+.upload .content h3{
+    color:var(--black);
+    font-size: 4rem;
+}
+
+.upload .content h3 span{
+    color:var(--green);
+}
+
+.upload .content p{
+    color:var(--light-color);
+    font-size: 1.8rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
 .home{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../image/hero-img.png) no-repeat;
+    background: url(../images/hero-img.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
@@ -396,7 +477,6 @@ section{
   }
   
   .about__img{
-    width: 100px;
     border-radius: .5rem;
     justify-self: center;
   }
@@ -424,7 +504,6 @@ section{
     }
   
     .about__img {
-      width: 100px;
       order: -1;
     }
   }
@@ -532,17 +611,6 @@ section{
 .footer .credit span{
     color:var(--green);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries  */
 

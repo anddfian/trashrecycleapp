@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href={{url_for('static' , filename = 'images/Logo.png')}}>
+    <meta name="dicoding:email" content="andd.fian@gmail.com">
+    <title>Trash Recycle App</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href={{url_for('static' , filename = 'css/style.css')}}>
+</head>
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="" class="logo"> <i class="fas fa-solid fa-recycle"></i> Trash Recycle App </a>
+        <nav class="navbar">
+            <a href="index">Home</a>
+            <a href="upload">Upload</a>
+            <a href="about">About</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+            </header>
+    <!-- header section ends -->
+    <!-- image starts -->
+    <div class = "content">
+        <row style = "width: 100% ; display: flex; justify-content: center;">
+            <h3 class="header-text">Uploaded Image</h3>
+        </row>
+        <row style = "width: 100% ; display: flex; justify-content: center;">
+            <img class = "result-img" src={{url_for('static', filename = 'images/test/'+ img)}}>
+        </row>
+    </div>
+    <!-- image ends -->
+    <!-- classification ends -->
+    <section class="categories" id="categories">
+        <h1 class="heading"> Trash <span>Classification</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="static/images/aluminium.png" alt="">
+                <h3>Aluminium</h3>
+                <p>{{ predictions.prob1 }}%</p>
+            </div>
+            <div class="box">
+                <img src="static/images/kaca.png" alt="">
+                <h3>Kaca</h3>
+                <p>{{ predictions.prob2 }}%</p>
+            </div>
+            <div class="box">
+                <img src="static/images/kertas.png" alt="">
+                <h3>Kertas</h3>
+                <p>{{ predictions.prob3 }}%</p>
+            </div>
+            <div class="box">
+                <img src="static/images/plastik.png" alt="">
+                <h3>Plastik</h3>
+                <p>{{ predictions.prob4 }}%</p>
+            </div>
+        </div>
+    </section>
+    <!-- classification ends -->
+    <!-- footer section starts  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> <i class="fas fa-solid fa-recycle"></i> Trash Recycle App</h3>
+                <p>Recycling for Everyone</p>
+                <div class="share">
+                    <a href="https://github.com/anddfian/trashrecycleapp" class="fab fa-github"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="https://api.whatsapp.com/send/?phone=6285346816962" class="links"> <i class="fas fa-phone"></i> 0853-4681-6962 </a>
+                <a href="https://api.whatsapp.com/send/?phone=6282393175076" class="links"> <i class="fas fa-phone"></i> 0823-9317-5076 </a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="upload" class="links"> <i class="fas fa-arrow-right"></i> Upload </a>
+                <a href="about" class="links"> <i class="fas fa-arrow-right"></i> About </a>
+            </div>
+        </div>
+        <div class="credit"> Created by <span> Trash Recycle App</span> | all rights reserved </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>

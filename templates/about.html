@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href={{url_for('static' , filename = 'images/Logo.png')}}>
+    <meta name="dicoding:email" content="andd.fian@gmail.com">
+    <title>Trash Recycle App</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href={{url_for('static' , filename = 'css/style.css')}}>
+</head>
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="" class="logo"> <i class="fas fa-solid fa-recycle"></i> Trash Recycle App </a>
+        <nav class="navbar">
+            <a href="index">Home</a>
+            <a href="upload">Upload</a>
+            <a href="about">About</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+            </header>
+    <!-- header section ends -->
+    <!-- about section starts -->
+    <section id="about" class="about section bd-container">
+        <div class="about__container  bd-grid">
+            <img src="static/images/Logo.png" alt="trashRecycle" class="about__img">
+            <article class="about__data">
+                <h1 class="heading-about">About <span>Trash Recycle App</span></h1>
+                <p class="about__description">Trash Recycle App adalah sebuah website yang dibangun untuk
+                    mengklasifikasikan sampah berdasarkan jenisnya yang masih dapat di daur ulang agar tidak menyebabkan berbagai masalah yang serius. Trash Recycle
+                    App diharapkan mampu membantu pengguna untuk mengkategorikan sampah.</p>
+            </article>>
+        </div>
+    </section>
+    <!-- about section ends -->
+    <!-- team section starts -->
+    <section class="about-team" id="about-team">
+        <h1 class="heading"> OUR <span>TEAM</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="static/images/Andi.jpg" alt="">
+                <h3>Andi Alfian Bahtiar</h3>
+                <a href="https://www.linkedin.com/in/anddfian/" target="_blank" class="btn">Connect</a>
+            </div>
+            <div class="box">
+                <img src="static/images/Rosi.jpg" alt="">
+                <h3>Rosi Maelani</h3>
+                <a href="https://www.linkedin.com/in/rosi-maelani/" target="_blank" class="btn">Connect</a>
+            </div>
+        </div>
+    </section>
+    <!-- team section ends -->
+    <!-- footer section starts  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> <i class="fas fa-solid fa-recycle"></i> Trash Recycle App</h3>
+                <p>Recycling for Everyone</p>
+                <div class="share">
+                    <a href="https://github.com/anddfian/trashrecycleapp" target="_blank" class="fab fa-github"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="https://api.whatsapp.com/send/?phone=6285346816962" target="_blank" class="links"> <i class="fas fa-phone"></i> 0853-4681-6962 </a>
+                <a href="https://api.whatsapp.com/send/?phone=6282393175076" target="_blank" class="links"> <i class="fas fa-phone"></i> 0823-9317-5076 </a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="upload" class="links"> <i class="fas fa-arrow-right"></i> Upload </a>
+                <a href="about" class="links"> <i class="fas fa-arrow-right"></i> About </a>
+            </div>
+        </div>
+        <div class="credit"> Created by <span> Trash Recycle App</span> | all rights reserved </div>
+    </section>
+    <!-- footer section ends -->
+    <!-- custom js file link  -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>
