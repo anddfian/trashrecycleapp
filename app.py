@@ -1,12 +1,10 @@
 import os
 from tensorflow.keras.models import load_model
 from flask import Flask, render_template, request
-from flask_sslify import SSLify
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
 
 app = Flask(__name__)
-sslify = SSLify(app)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 model = load_model(os.path.join(BASE_DIR, 'model.hdf5'))
 
